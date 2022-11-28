@@ -1,0 +1,42 @@
+{
+  "name": "movieapidevelopment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node script/server.js",
+    "localtunnel": "lt --port 3000",
+    "share": "npm-run-all --parallel start localtunnel",
+    "build": "webpack --config webpack.config.js",
+    "format:all": "prettier --write \"src/**/*.js\"",
+    "lint": "eslint src"
+  },
+  "author": "Luka",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "bootstrap": "^5.2.3",
+    "express": "^4.18.2",
+    "jquery": "^3.6.1",
+    "localtunnel": "^2.0.2",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.20.5",
+    "@babel/node": "^7.20.5",
+    "@babel/preset-env": "^7.20.2",
+    "add-asset-html-webpack-plugin": "^5.0.2",
+    "babel-loader": "^9.1.0",
+    "css-loader": "^6.7.2",
+    "eslint": "^8.28.0",
+    "html-webpack-plugin": "^5.5.0",
+    "open": "^8.4.0",
+    "path": "^0.12.7",
+    "prettier": "^2.8.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.0",
+    "webpack-dev-middleware": "^6.0.1"
+  }
+}

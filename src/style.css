@@ -1,0 +1,81 @@
+.currencyAndFlagDiv{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.movieField{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    padding: 10px;
+    width: 350px;
+    margin: 20px auto;
+    border-radius: 8px;
+    font-family: Rubik;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.648);
+}
+.inputField{
+    display: flex;
+    justify-content: center;
+    font-family: Rubik;
+    padding: 10px;
+   min-height: 300px;
+
+}
+.inputField button{
+    width: 100px;
+    height: 30px;
+    border-radius: 2px;
+    border: none;
+    font-family: Rubik;
+    margin: 5px;
+}
+.inputField input{
+    margin: 5px;
+    font-family: Rubik;
+    height: 30px;
+}
+.mainDiv{
+    /* background: black; */
+    width: 350px;
+    margin: 20px auto;
+    border-radius: 3px;
+    background-color: black;
+    transition: 0.3s;
+    height: auto;
+    background-repeat: no-repeat;
+}
+.mainDiv2{
+display: flex;
+justify-content: center;
+padding: 10px;
+    margin: 20px auto 0px auto;
+    background-color: black;
+    transition: 0.3s;
+    height: auto;
+    background-repeat: no-repeat;
+}
+.mainDiv2 button{
+    border: none;
+}
+.lastResults{
+    display: flex;
+justify-content: space-around;
+padding: 10px;
+    margin: auto;
+    background-color: black;
+    transition: 0.3s;
+    height: auto;
+    background-repeat: no-repeat;
+}
+.getPopulation{
+    color: white;
+    font-family: Rubik;
+}
+.getRuntime{
+        color: white;
+    font-family: Rubik;
+
+}
