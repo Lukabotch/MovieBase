@@ -15,6 +15,13 @@ searchButton.addEventListener("click", function () {
   return getData(movieInput.value);
 });
 
+// this event gets movie on key press without using search button
+movieInput.addEventListener("keypress", function (e) {
+  if (e.keyCode == 13) {
+    return getData(movieInput.value);
+  }
+});
+
 // this function hadles specified movie data from using fetch
 function getData(movieName) {
   fetch(`http://www.omdbapi.com/?t=${movieName}&apikey=${APIKey}`)
