@@ -50,9 +50,9 @@ function displayResult(movie) {
   // this function merges several information from countries API and inserts in HTML element
   function currencyAndFlags(x) {
     currencyAndFlagDiv.innerHTML +=
-      `${x[0].name.common}: ${Object.keys(x[0].currencies)}<img src='${
+      `<div>${x[0].name.common}: ${Object.keys(x[0].currencies)}<img src='${
         x[0].flags.svg
-      }' width=20 height=20/>` || `Country: ${movie.Country}`;
+      }' width=20 height=20/></div>,,&nbsp &nbsp` || `Country: ${movie.Country}`;
   }
 
   // the code below filters fullnames and gets only first names of actors and actresses
